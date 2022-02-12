@@ -28,7 +28,6 @@ module.exports = {
     'Select second day from today on date picker for appointment': (browser) => {
         browser.page.appointment()
             .selectDateFromDatePicker(2);
-        browser.pause(1000);
     },
 
     'Select doctor from list whose rating is greater than 4.8': (browser) => {
@@ -39,6 +38,5 @@ module.exports = {
     'Verify user is navigated to profile creation page': (browser) => {
         browser.page.profileCreation()
             .VerifyProfileCreation();
-        browser.pause(1000);
     },
 };
