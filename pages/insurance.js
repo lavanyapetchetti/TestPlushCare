@@ -1,9 +1,7 @@
 'use strict';
 
 const INSURANCE_URL ='https://www.plushcare.com/booking/primary-care/method/'
-/**
- * Plans Page Object
- */
+
 const elements = {
 
     useMyInsuranceButton: {
