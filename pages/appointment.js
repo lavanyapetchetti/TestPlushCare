@@ -23,7 +23,7 @@ const pageCommands = {
 
     visit: function () {
         this
-            .navigate(INSURANCE_URL)
+            .navigate(APPOINTMENT_URL)
             .waitForElementVisible('@appointmentWrapper');
 
         return this;
@@ -47,19 +47,29 @@ const pageCommands = {
     },
 
     selectDoctorFromDoctorList: function (rating) {
-        const selector = `//*[@data-testid="rating"]/following-sibling::span[text() > "${rating}"]`;
-        let self = this;
-        this.api.elements('xpath', selector, function (elementCount) {
-            const randomDoctor = Math.floor(Math.random() * elementCount.value.length + 1);
-            const bookButtonSelector = `(//*[@data-testid="rating"]/following-sibling::span[text() > "${rating}"])[${randomDoctor}]/../../following::div[2]//button`;
-            self
-                .api.useXpath()
-                .waitForElementVisible(bookButtonSelector)
-                .click(bookButtonSelector)
-                .useCss();
-        });
-
-
+        if (rating < 4.8) {
+            this.assert.ok(false, 'Given rating is lot valid');
+        } else {
+            const selector = `//*[@data-testid="rating"]/following-sibling::span[text() >= "${rating}"]`;
+            let self = this;
+            this.api.elements('xpath', selector, function (elementCount) {
+                const isPresent = elementCount.value.length > 0;
+                if (isPresent) {
+                    let randomDoctor = Math.floor(Math.random() * elementCount.value.length);
+                    if (randomDoctor === 0){
+                        randomDoctor = randomDoctor + 1;
+                    }
+                    const bookButtonSelector = `(//*[@data-testid="rating"]/following-sibling::span[text() >= "${rating}"])[${randomDoctor}]/../../following::div[2]//button`;
+                    self
+                        .api.useXpath()
+                        .waitForElementVisible(bookButtonSelector)
+                        .click(bookButtonSelector)
+                        .useCss();
+                } else {
+                    self.api.assert.ok(false, 'Unable to find doctor with given rating');
+                }
+            });
+        }
     }
 
 };
