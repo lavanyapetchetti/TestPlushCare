@@ -8,3 +8,7 @@ See below instruction if you want to debug test on Saucelabs from local
 git clone https://github.com/lavanyapetchetti/TestPlushCare.git
 yarn install
 ```
+## Running tests on your laptop
+```bash
+npm test
+```
