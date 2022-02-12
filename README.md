@@ -5,7 +5,6 @@ See below instruction if you want to debug test on Saucelabs from local
 
 ## Installation
 ```bash
-cd TestPlushCare
 git clone https://github.com/lavanyapetchetti/TestPlushCare.git
-make install
+yarn install
 ```
