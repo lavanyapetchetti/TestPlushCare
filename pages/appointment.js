@@ -4,9 +4,6 @@ const moment = require('moment');
 
 const APPOINTMENT_URL = 'https://www.plushcare.com/booking/primary-care/appointments/';
 
-/**
- * Plans Page Object
- */
 const elements = {
 
     appointmentWrapper: '#appointments-wrapper',
