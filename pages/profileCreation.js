@@ -1,8 +1,5 @@
 'use strict';
 
-/**
- * Plans Page Object
- */
 const elements = {
 
     createProfile: {
