@@ -112,7 +112,6 @@ const pageCommands = {
         }
     },
 
-
     /*
      * Book an appointment by nth doctor from the doctor's list
      */
@@ -126,7 +125,6 @@ const pageCommands = {
             .useCss();
 
         return this;
-
     }
 
 };
