@@ -9,7 +9,6 @@ const elements = {
         locateStrategy: 'xpath',
     },
 
-
 };
 
 /**
