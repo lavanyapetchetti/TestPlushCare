@@ -16,10 +16,13 @@ const elements = {
 };
 
 /**
- * home Functions
+ * Insurnace Page Functions
  */
 const pageCommands = {
-
+    
+    /*
+     * Redirected to insurance url
+     */
     visit: function () {
         this
             .navigate(INSURANCE_URL)
@@ -28,6 +31,9 @@ const pageCommands = {
         return this;
     },
 
+    /*
+     * Verify Insurance options buttons
+     */
     VerifyOptInsuranceOptions: function () {
         this
             .waitForElementVisible('@useMyInsuranceButton')
@@ -36,6 +42,9 @@ const pageCommands = {
         return this;
     },
 
+    /*
+     * Select Use My Insurance option button
+     */
     selectUseMyInsuranceOption: function () {
         this
             .waitForElementVisible('@useMyInsuranceButton')
@@ -45,6 +54,9 @@ const pageCommands = {
         return this;
     },
 
+    /*
+     * Select Pay Myself Insurance option button
+     */
     selectPayMyselfOption: function () {
         this
             .waitForElementVisible('@payMyselfButton')
