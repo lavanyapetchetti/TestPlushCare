@@ -12,7 +12,7 @@ const elements = {
 };
 
 /**
- * home Functions
+ * Home Page Functions
  */
 const pageCommands = {
 
