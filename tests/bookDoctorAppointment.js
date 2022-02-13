@@ -13,7 +13,7 @@ module.exports = {
     'Verify user is navigated to opt insurance page': (browser) => {
         browser.page.insurance()
             .VerifyOptInsuranceOptions();
-        browser.pause(1000);
+        browser.pause(1000); //wait for buttons to load 
     },
 
     'Select pay by myself insurance option': (browser) => {
