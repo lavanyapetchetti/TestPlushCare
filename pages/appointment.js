@@ -17,7 +17,7 @@ const elements = {
 };
 
 /**
- * home Functions
+ * Appointment Page Functions
  */
 const pageCommands = {
     /*
