@@ -37,6 +37,6 @@ module.exports = {
 
     'Verify user is navigated to profile creation page': (browser) => {
         browser.page.profileCreation()
-            .VerifyProfileCreation();
+            .VerifyRatingOnProfileCreation();
     },
 };
