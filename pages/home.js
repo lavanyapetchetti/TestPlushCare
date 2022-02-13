@@ -17,6 +17,9 @@ const elements = {
  */
 const pageCommands = {
 
+    /**
+    * Launch plushcare home page
+    */
     visit: function () {
         this
             .navigate(this.api.launch_url)
@@ -25,6 +28,9 @@ const pageCommands = {
         return this;
     },
 
+    /**
+    * Select Book an Appointment button on home page
+    */
     selectBookAnAppointment: function () {
         this
             .waitForElementVisible('@bookAnAppointment')
