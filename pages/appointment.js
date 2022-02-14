@@ -31,7 +31,7 @@ const pageCommands = {
         return this;
     },
 
-    /*
+    /**
      * Selects second day from current day from date picker
      */
     selectDateFromDatePicker: function (day) {
@@ -54,7 +54,7 @@ const pageCommands = {
         return this;
     },
 
-    /*
+    /**
      * Book an appointment with doctor whose rating is greater than 4.8
      */
     selectDoctorFromDoctorList: function (rating) {
@@ -83,7 +83,7 @@ const pageCommands = {
         }
     },
 
-    /*
+    /**
      * Book an appointment with doctor by any rating
      */
     selectDoctorByRating: function (rating) {
@@ -112,7 +112,7 @@ const pageCommands = {
         }
     },
 
-    /*
+    /**
      * Book an appointment by nth doctor from the doctor's list
      */
     selectNthDoctorFromDoctorList: function (num) {
