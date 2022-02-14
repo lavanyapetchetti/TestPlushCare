@@ -1,3 +1,5 @@
+//Test to book an doctor appointment whose rating is greater than 4.8 on second day from current day
+
 module.exports = {
 
     'Navigate to PlushCare home page': (browser) => {
