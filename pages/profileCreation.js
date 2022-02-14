@@ -37,7 +37,7 @@ const elements = {
  * Profile Creation Page Functions
  */
 const pageCommands = {
-    /*
+    /**
      * Verify Profile creation Page
      */
     VerifyRatingOnProfileCreation: function () {
@@ -51,7 +51,7 @@ const pageCommands = {
         return this;
     },
 
-    /*
+    /**
      * Create profile
      */
     enterUserDetails: function (firstName, lastName, dob, gender, num, email, psw) {
