@@ -42,7 +42,7 @@ const pageCommands = {
         return this;
     },
 
-    /*
+    /**
      * Select Use My Insurance option button
      */
     selectUseMyInsuranceOption: function () {
@@ -54,7 +54,7 @@ const pageCommands = {
         return this;
     },
 
-    /*
+    /**
      * Select Pay Myself Insurance option button
      */
     selectPayMyselfOption: function () {
